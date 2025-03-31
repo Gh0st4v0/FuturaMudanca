@@ -7,20 +7,31 @@
 
 *{
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: none;
+    padding: none;
+}
+
+header{
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
     color: var(--grey-white);
 }
 
 p{
+    text-align: center;
     font-size: large;
 }
 
+
 body{
-    background: rgb(0,106,113);
-    background: linear-gradient(357deg, rgba(0,106,113,1) 0%, rgba(72,166,167,1) 50%);
+    background-color: var(--grey-white);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    padding: 2rem;
+    align-items: center;
 }
 
 img{
@@ -35,7 +46,9 @@ img{
 
 #links a{
     margin-right: 1rem;
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
+    color: var(--grey-white);
+    font-size: larger;
     padding: 1rem;
     width: 7rem;
     text-decoration: none;
@@ -44,9 +57,34 @@ img{
 }
 
 #links a:hover{
-    opacity: .5;
+    background-color: var(--light-blue);
+}
+
+ol, ul{
+    background-color: var(--light-blue);
+    width: 50vw;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    padding: 1rem;
+    font-size: larger;
+    list-style: none;
+    border: solid, var(--dark-blue);
+    border-top: none;
+    border-radius: 0 1rem 1rem 0;
 }
 
 footer{
     justify-content: flex-end;
 }
+
+@media only screen 
+and (max-device-width: 700px){
+    #links{
+        display: flex;
+        flex-direction: column;
+    }
+ }

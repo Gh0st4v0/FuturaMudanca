@@ -7,8 +7,8 @@
 
 *{
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    margin: none;
-    padding: none;
+    text-align: center;
+    font-size: large;
 }
 
 header{
@@ -21,13 +21,9 @@ header{
     color: var(--grey-white);
 }
 
-p{
-    text-align: center;
-    font-size: large;
-}
-
 
 body{
+    margin: 0;
     background-color: var(--grey-white);
     display: flex;
     flex-direction: column;
@@ -77,6 +73,17 @@ li{
     border-radius: 0 1rem 1rem 0;
 }
 
+#option-list{
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+#option{
+    padding: 0;
+    border: none;
+}
+
 footer{
     justify-content: flex-end;
 }
@@ -86,5 +93,30 @@ and (max-device-width: 700px){
     #links{
         display: flex;
         flex-direction: column;
+    }
+
+    #links a{
+        margin: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    ol, ul{
+        width: 80vw;
+    }
+    
+    img{
+        width: 50vw;
+    }
+
+    #option-list{
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #option{
+        padding: 0;
+        border: none;
     }
  }
